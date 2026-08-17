@@ -297,11 +297,13 @@ footer p:last-child {
         padding: 15px 5%;
     }
 
-    .logo img {
+.logo img {
         width: 100px;
+        margin-top: 8px;
     }
 
     nav ul li a {
+        gap:15px;
         font-size: 16px;
     }
 
