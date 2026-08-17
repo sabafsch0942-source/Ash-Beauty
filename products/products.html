@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ASH | Products</title>
+
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ASH</div>
+         <img src="../images/ash-logo.PNG" alt="ASH Logo">
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about+contact/about.html" class="active">About & Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Products Section -->
+    <section class="products-section">
+
+        <div class="section-title">
+            <h1>Our Products</h1>
+            <p>Choose your favorite color and size</p>
+        </div>
+
+
+        <div class="products-container">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product1.PNG" alt="ASH Color 1">
+
+                <div class="product-info">
+
+                    <h2> COCOA </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size1">Choose Size:</label>
+
+                    <select id="size1" onchange="changePrice(1)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price1">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(1)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product2.png" alt="ASH Color 2">
+
+                <div class="product-info">
+
+                    <h2> SWEET </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size2">Choose Size:</label>
+
+                    <select id="size2" onchange="changePrice(2)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price2">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(2)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product3.png" alt="ASH Color 3">
+
+                <div class="product-info">
+
+                    <h2> CARAMEL </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size3">Choose Size:</label>
+
+                    <select id="size3" onchange="changePrice(3)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price3">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(3)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product4.png" alt="ASH Color 4">
+
+                <div class="product-info">
+
+                    <h2> ROSE </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size4">Choose Size:</label>
+
+                    <select id="size4" onchange="changePrice(4)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price4">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(4)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product5.png" alt="ASH Color 5">
+
+                <div class="product-info">
+
+                    <h2> BARBIE </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size5">Choose Size:</label>
+
+                    <select id="size5" onchange="changePrice(5)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price5">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(5)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <img src="../images/imagesproducts/product6.png" alt="ASH Color 6">
+
+                <div class="product-info">
+
+                    <h2> BERRY </h2>
+
+                    <p class="description">
+                        ASH Premium Product
+                    </p>
+
+                    <label for="size6">Choose Size:</label>
+
+                    <select id="size6" onchange="changePrice(6)">
+                        <option value="5">5 ML</option>
+                        <option value="10">10 ML</option>
+                    </select>
+
+                    <p class="price" id="price6">
+                        7,000 IQD
+                    </p>
+
+                    <button onclick="addToCart(6)">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ASH. Made with love by Kurdish hands.</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+   <script src="products.js"></script>
+
+</body>
+</html>
