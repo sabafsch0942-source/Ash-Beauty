@@ -382,7 +382,7 @@ footer {
     }
 
     .logo img {
-        width: 65px;
+        width: 100px;
         margin-top: 8px;
     }
 
@@ -391,7 +391,7 @@ footer {
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .about-section {

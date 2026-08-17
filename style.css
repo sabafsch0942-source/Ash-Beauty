@@ -298,11 +298,11 @@ footer p:last-child {
     }
 
     .logo img {
-        width: 60px;
+        width: 100px;
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     #hero {
