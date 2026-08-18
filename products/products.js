@@ -36,19 +36,11 @@ const products = [
 ];
 
 
-// =========================
-// CHANGE PRICE
-// =========================
-
+// Change Price
 function changePrice(productNumber) {
 
-    const size = document.getElementById(
-        "size" + productNumber
-    ).value;
-
-    const price = document.getElementById(
-        "price" + productNumber
-    );
+    const size = document.getElementById("size" + productNumber).value;
+    const price = document.getElementById("price" + productNumber);
 
     if (size === "5") {
         price.textContent = "7,000 IQD";
@@ -58,22 +50,14 @@ function changePrice(productNumber) {
 }
 
 
-// =========================
-// CART
-// =========================
-
+// Cart
 let cart = [];
 
 
-// =========================
-// ADD TO CART
-// =========================
-
+// Add to Cart
 function addToCart(productNumber) {
 
-    const size = document.getElementById(
-        "size" + productNumber
-    ).value;
+    const size = document.getElementById("size" + productNumber).value;
 
     let price;
 
@@ -83,73 +67,18 @@ function addToCart(productNumber) {
         price = 10000;
     }
 
+    const product = products.find(item => item.id === productNumber);
 
-    const product = products.find(
-        item => item.id === productNumber
-    );
-
-
-    const existingProduct = cart.find(
-        item =>
-            item.id === productNumber &&
-            item.size === size
-    );
-
-
-    if (existingProduct) {
-
-        existingProduct.quantity++;
-
-    } else {
-
-        cart.push({
-            id: product.id,
-            name: product.name,
-            image: product.image,
-            size: size,
-            price: price,
-            quantity: 1
-        });
-
-    }
-
-
-    updateCart();
-
+    cart.push({
+        name: product.name,
+        size: size,
+        price: price
+    });
 
     alert(
         product.name +
-        " added to cart!\n\n" +
+        " added to cart!\n" +
         "Size: " + size + " ML\n" +
-        "Price: " + price.toLocaleString() + " IQD"
-    );
-}
-
-
-// =========================
-// UPDATE CART
-// =========================
-
-function updateCart() {
-
-    let totalItems = 0;
-    let totalPrice = 0;
-
-
-    cart.forEach(item => {
-
-        totalItems += item.quantity;
-
-        totalPrice +=
-            item.price * item.quantity;
-
-    });
-
-
-    console.log("Items:", totalItems);
-
-    console.log(
-        "Total:",
-        totalPrice.toLocaleString() + " IQD"
+        "Price: " + price + " IQD"
     );
 }
