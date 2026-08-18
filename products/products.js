@@ -5,32 +5,32 @@
 const products = [
     {
         id: 1,
-        name: "Color 1",
+        name: " COCOA Color ",
         image: "../images/product1.png"
     },
     {
         id: 2,
-        name: "Color 2",
+        name: " SWEET Color ",
         image: "../images/product2.png"
     },
     {
         id: 3,
-        name: "Color 3",
+        name: " COCOA Color ",
         image: "../images/product3.png"
     },
     {
         id: 4,
-        name: "Color 4",
+        name: " ROSE Color ",
         image: "../images/product4.png"
     },
     {
         id: 5,
-        name: "Color 5",
+        name: " BARBIE Color ",
         image: "../images/product5.png"
     },
     {
         id: 6,
-        name: "Color 6",
+        name: " BERRY Color ",
         image: "../images/product6.png"
     }
 ];
